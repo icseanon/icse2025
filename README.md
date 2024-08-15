@@ -1,7 +1,20 @@
 # A Differential Testing Framework to Identify Critical AV Failures Leveraging Arbitrary Inputs
+![framework diagram](images/framework.png)
+![example failure](images/011_Chicago_Billionaires_Millionaires_Lake_Shore_Mansions_The_North_Shore_15_frame3465.png)
+
+
 This repository contains the code for the ICSE'25 submission "A Differential Testing Framework to Identify Critical AV Failures Leveraging Arbitrary Inputs"
 
 Due to liscensing limitations, the videos utilized in the experiment cannot be bundled with the anonymized repository. However, the AV and SUT outputs produced from the videos have been included.
+
+# Repository Structure
+Folder Structure:
+* [0_Setup](/0_Setup) - Information on setting up and running the SUTs used in the experiment
+* [1_Datasets](/1_Datasets) - Placeholder for datasets - ommitted for anonymization.
+* [2_TransformVideos](/2_TransformVideos) - Scripts to normalize data in `1_Datasets`
+* :star: [3_Process](/3_Process) - Scripts to execute the experiment
+  * :clipboard: [cache](/3_Process/cache) - Raw performance data from the SUTs evaluated on all videos.
+  * :toolbox: :star2: [OutlierDetection.py](/3_Process/OutlierDetection.py) - Code to perform the statistical analysis of DiffTest4AV. This implementation uses the Dixon's Q test for outlier detection (`dixon`).
 
 # Reproducing the results in the paper
 The following was tested on a fresh install of Ubuntu 22.04 using [miniconda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/linux.html)
