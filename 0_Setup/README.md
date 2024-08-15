@@ -15,4 +15,4 @@ This guide includes folders for each of the [openpilot](https://github.com/comma
 
 These will result in a set of working versions of openpilot running on an Ubuntu 20.04 machine. They will both take in video and output steering angle, as seen below. See each of the readme's for more information:
 
-![openpilot running on the data from 2023_03](../../images/2023_03.gif)
+![openpilot running on the data from 2023_03](../images/2023_03.gif)
